@@ -21,9 +21,6 @@ import com.practice.clients.controller.ClientController;
 import com.practice.clients.entities.Client;
 import com.practice.clients.service.ClientService;
 
-import lombok.extern.java.Log;
-
-@Log
 @ExtendWith(MockitoExtension.class)
 @RunWith(SpringRunner.class)
 public class ClientControllerTest {
@@ -81,7 +78,6 @@ public class ClientControllerTest {
         ResponseEntity<Map<String, Object>> responseEntity = clientController.createClient(c1);
         
         Client cResponse = (Client) responseEntity.getBody().get("client");
-        log.info(cResponse.getName()+" - "+c1.getName());
         
         assertThat(cResponse.getName()).isEqualTo(c1.getName());
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.CREATED);
