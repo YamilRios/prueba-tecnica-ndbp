@@ -8,7 +8,7 @@ import com.practice.clients.entities.Client;
 public interface ClientService {
 	List<Client> findAll();
 
-	Client save(Client c);
+	Client save(Client c) throws Exception;
 
 	Optional<Client> findById(Long id);
 
