@@ -1,0 +1,113 @@
+Clientes
+
+{
+    "identification": "12345645",
+	"name": "Jose Lema",
+	"age": 25,
+	"gender": "Masculino",
+	"address": "Otavalo sn y principal",
+	"telephone": "098254785",
+    "clientId": "A1",
+	"password": "1234",
+	"state": true
+}
+
+{
+    "identification": "12345646",
+	"name": "Marianela Montalvo",
+	"age": 25,
+	"gender": "Masculino",
+	"address": "Amazonas y  NNUU",
+	"telephone": "097548965",
+    "clientId": "A2",
+	"password": "5678",
+	"state": true
+}
+´
+{
+    "identification": "12345647",
+	"name": "Juan Osorio",
+	"age": 25,
+	"gender": "Masculino",
+	"address": "13 junio y Equinoccial",
+	"telephone": "098874587",
+    "clientId": "A3",
+	"password": "1245",
+	"state": true
+}
+
+CUENTA
+
+{
+    "accountNumber": "478758",
+	"accountType": "Ahorro",
+	"balance": "2000",
+	"state": true,
+	"clientFk": 1
+}
+
+{
+    "accountNumber": "225487",
+	"accountType": "Corriente",
+	"balance": "100",
+	"state": true,
+	"clientFk": 2
+}
+
+{
+    "accountNumber": "495878",
+	"accountType": "Ahorro",
+	"balance": "0",
+	"state": true,
+	"clientFk": 3
+}
+
+{
+    "accountNumber": "496825",
+	"accountType": "Ahorro",
+	"balance": "540",
+	"state": true,
+	"clientFk": 2
+}
+
+{
+    "accountNumber": "585545",
+	"accountType": "Corriente",
+	"balance": "1000",
+	"state": true,
+	"clientFk": 1
+}
+
+movimientos
+
+{
+    "movementId": "M1",
+    "date": "2012-04-23",
+    "movementType": "Debito", 
+    "amount": 575,
+    "accountFk": "478758"
+}
+
+{
+    "movementId": "M2",
+    "date": "2012-04-24",
+    "movementType": "Credito", 
+    "amount": 600,
+    "accountFk": "225487"
+}
+
+{
+    "movementId": "M3",
+    "date": "2012-04-25",
+    "movementType": "Credito", 
+    "amount": 150,
+    "accountFk": "495878"
+}
+
+{
+    "movementId": "M4",
+    "date": "2012-04-26",
+    "movementType": "Debito", 
+    "amount": 540,
+    "accountFk": "496825"
+}
